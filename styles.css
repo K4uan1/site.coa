@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-image: url(parallax-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.scrollButton {
+  background-color: #10403B;
+  flex: 1;
+  width: calc(20% + 60px); 
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  color: white;
+}
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+}
+.search-select-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#searchInput {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background-color: transparent;
+  width: 98.8%;
+}
+#filterSelect {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 25%;
+}
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}
+@media (max-width: 768px) {
+  .scrollButton{
+    font-size: 14px;
+  }
+  .scrollButton {
+    background-color: #10403B;
+    flex: 1;
+    width: calc(20%); 
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+    color: white;
+  }
+}

@@ -1,0 +1,100 @@
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: #BFBFBF;
+    background-image: url(parallax-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nav-bar {
+  background-color: #10403B;
+  color: #fff;
+  padding: 0.5%;
+}
+.nav-bar nav ul {
+  list-style: none;
+  text-align: center;
+}
+.nav-bar nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.nav-bar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+section {
+  display: flex;
+  background-color: transparent;
+  height: 80vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+}
+
+button {
+  background: #223077;
+  border: none;
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 650;
+  width: 1000px;
+  max-width: 500px;     
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transform: skew(-21deg);
+  margin: 10px 0;
+  color:white;
+}
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+footer {
+  background-color: #10403B;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+button {
+  background: #223077;
+  border: none;
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 650;
+  width: 200px;
+  max-width: 500px;      
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transform: skew(-21deg);
+  margin: 10px 0;
+  color:white;
+  } 
+}
+
+span{
+  font-size: 20px;
+  margin-right: 5px;
+}
